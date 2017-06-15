@@ -1,17 +1,17 @@
 {
-  "name": "list-enum-abstract",
-  "license": "MIT",
-  "description": "Little tool to list out all entries of an @:enum abstract",
-  "tags": [
-    "utility"
-  ],
-  "classPath": "src",
-  "contributors": [
-    "kevinresol"
-  ],
-  "releasenote": "initial release",
-  "version": "1.0.0",
-  "dependencies": {
-    "tink_macro": ""
-  }
+	"name": "list-enum-abstract",
+	"license": "MIT",
+	"tags": [
+		"utility"
+	],
+	"classPath": "src",
+	"description": "Little tool to list out all entries of an @:enum abstract",
+	"contributors": [
+		"kevinresol"
+	],
+	"releasenote": "Initial Release",
+	"version": "1.0.0",
+	"dependencies": {
+		"tink_macro": ""
+	}
 }
