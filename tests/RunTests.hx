@@ -12,21 +12,34 @@ class RunTests {
   
 }
 
+@:asserts
 class Test {
   public function new() {}
   
-  public function string()
-    return assert(ListEnumAbstract.list((null:E1)).join(',') == '1,2,3');
+  public function string() {
+    asserts.assert(ListEnumAbstract.list(E1).join(',') == '1,2,3');
+    asserts.assert(ListEnumAbstract.count(E1) == 3);
+    return asserts.done();
+  }
   
-  public function int()
-    return assert(ListEnumAbstract.list((null:E2)).join(',') == '1,2,3');
+  public function int() {
+    asserts.assert(ListEnumAbstract.list(E2).join(',') == '1,2,3');
+    asserts.assert(ListEnumAbstract.count(E2) == 3);
+    return asserts.done();
+  }
     
-  public function excludeInlineVar()
-    return assert(ListEnumAbstract.list((null:E3)).join(',') == '1,2,3');
+  public function excludeInlineVar() {
+    asserts.assert(ListEnumAbstract.list(E3).join(',') == '1,2,3');
+    asserts.assert(ListEnumAbstract.count(E3) == 3);
+    return asserts.done();
+  }
   
   #if (haxe_ver >= 4)
-  public function haxe4()
-    return assert(ListEnumAbstract.list((null:E4)).join(',') == '1,2,3');
+  public function haxe4() {
+    asserts.assert(ListEnumAbstract.list(E4).join(',') == '1,2,3');
+    asserts.assert(ListEnumAbstract.count(E4) == 3);
+    return asserts.done();
+  }
   #end
 }
 
