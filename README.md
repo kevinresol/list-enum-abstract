@@ -2,5 +2,12 @@
 
 Usage:
 ```haxe
-ListEnumAbstract.list((null:MyEnumAbtract));
+ListEnumAbstract.list(MyEnumAbtract);
+
+@:enum
+abstract MyEnumAbstract(String) {
+	var A = 'a';
+	var B = 'b';
+	var C = 'c';
+}
 ```
