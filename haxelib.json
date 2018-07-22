@@ -9,8 +9,8 @@
 	"contributors": [
 		"kevinresol"
 	],
-	"releasenote": "Initial Release",
-	"version": "1.0.0",
+	"releasenote": "Bug fix and updated API (breaking change)",
+	"version": "2.0.0",
 	"dependencies": {
 		"tink_macro": ""
 	}
