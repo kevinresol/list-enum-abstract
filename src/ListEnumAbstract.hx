@@ -16,7 +16,7 @@ class ListEnumAbstract {
 	}
 	
 	#if macro
-	static function getFields(e:Expr) {
+	public static function getFields(e:Expr) {
 		return switch Context.follow(Context.getType(e.toString())) {
 			case TAbstract(_.get() => {meta: meta, impl: impl}, _) if(meta.has(':enum')):
 				 impl.get().statics.get()
